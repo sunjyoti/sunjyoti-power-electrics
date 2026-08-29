@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SUNJYOTI POWER & ELECTRICS - wholesalers and retailers of electrical goods in Ezra Street, Kolkata.">
+  <title>SUNJYOTI POWER & ELECTRICS | Kolkata</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --navy:#061d3b;
+      --navy2:#0a2d58;
+      --orange:#ef7d00;
+      --orange2:#ff9f1c;
+      --cream:#fffaf2;
+      --ink:#17202a;
+      --muted:#5d6875;
+      --white:#fff;
+      --shadow:0 16px 45px rgba(6,29,59,.12);
+      --radius:22px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;font-family:Inter,Arial,sans-serif;color:var(--ink);background:#fff}
+    a{text-decoration:none;color:inherit}
+    .topbar{background:var(--navy);color:#fff;font-size:14px;padding:9px 5%;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+    .topbar a{color:#ffd79e}
+    header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.96);backdrop-filter:blur(10px);border-bottom:1px solid #eee}
+    nav{max-width:1180px;margin:auto;padding:14px 5%;display:flex;align-items:center;justify-content:space-between;gap:25px}
+    .brand{display:flex;align-items:center;gap:12px;font-weight:800;color:var(--navy)}
+    .brand-mark{width:45px;height:45px;border-radius:12px;background:var(--navy);display:grid;place-items:center;color:var(--orange2);font-size:24px;border:2px solid var(--orange)}
+    .brand-text{line-height:1.05}
+    .brand-text small{display:block;color:var(--orange);font-size:10px;letter-spacing:1.4px;margin-top:4px}
+    .navlinks{display:flex;align-items:center;gap:25px;font-size:14px;font-weight:700}
+    .navlinks a:hover{color:var(--orange)}
+    .nav-cta{background:var(--orange);color:#fff!important;padding:11px 16px;border-radius:999px}
+    .hero{background:
+      radial-gradient(circle at 85% 20%,rgba(239,125,0,.16),transparent 28%),
+      linear-gradient(135deg,#fdfdfd 0%,#fff9ef 100%);
+      padding:70px 5% 65px;overflow:hidden}
+    .hero-inner{max-width:1180px;margin:auto;display:grid;grid-template-columns:1.02fr .98fr;align-items:center;gap:50px}
+    .eyebrow{display:inline-flex;align-items:center;gap:9px;background:#fff;border:1px solid #f2d7b2;color:#a85300;padding:8px 13px;border-radius:999px;font-size:12px;font-weight:800;letter-spacing:.8px;text-transform:uppercase}
+    h1{font-family:"Playfair Display",Georgia,serif;font-size:clamp(44px,6vw,76px);line-height:.98;color:var(--navy);margin:20px 0 14px}
+    h1 span{color:var(--orange)}
+    .hero p{font-size:18px;line-height:1.75;color:var(--muted);max-width:640px}
+    .actions{display:flex;gap:12px;flex-wrap:wrap;margin:28px 0}
+    .btn{display:inline-flex;align-items:center;justify-content:center;padding:14px 20px;border-radius:12px;font-weight:800;border:2px solid transparent}
+    .btn-primary{background:var(--navy);color:#fff}
+    .btn-primary:hover{background:var(--navy2)}
+    .btn-secondary{border-color:var(--orange);color:#a65300;background:#fff}
+    .hero-card{background:#fff;border-radius:28px;box-shadow:var(--shadow);padding:10px;border:1px solid #eee}
+    .hero-card img{display:block;width:100%;height:auto;border-radius:20px}
+    .trust{display:flex;gap:25px;flex-wrap:wrap;color:#53606e;font-size:13px;font-weight:600}
+    .trust strong{color:var(--navy)}
+    section{padding:78px 5%}
+    .container{max-width:1180px;margin:auto}
+    .section-head{text-align:center;max-width:750px;margin:0 auto 42px}
+    .section-head .tag{color:var(--orange);font-size:12px;letter-spacing:1.5px;text-transform:uppercase;font-weight:900}
+    h2{font-family:"Playfair Display",Georgia,serif;color:var(--navy);font-size:42px;margin:10px 0}
+    .section-head p{color:var(--muted);line-height:1.7}
+    .products{background:var(--cream)}
+    .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+    .product{background:#fff;border:1px solid #eee;border-radius:18px;padding:25px;transition:.2s;box-shadow:0 7px 25px rgba(0,0,0,.04)}
+    .product:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+    .icon{width:48px;height:48px;border-radius:14px;background:#fff1df;border:1px solid #ffd49d;display:grid;place-items:center;color:#b85c00;font-size:23px;margin-bottom:16px}
+    .product h3{margin:0 0 8px;color:var(--navy);font-size:17px}
+    .product p{margin:0;color:var(--muted);font-size:14px;line-height:1.55}
+    .about-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:50px;align-items:center}
+    .about-art{background:var(--navy);border-radius:28px;padding:22px;box-shadow:var(--shadow)}
+    .about-art img{width:100%;display:block;border-radius:18px}
+    .about-copy h2{text-align:left}
+    .about-copy p{color:var(--muted);line-height:1.8}
+    .checks{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:25px}
+    .check{display:flex;gap:10px;align-items:flex-start;font-weight:700;color:var(--navy);font-size:14px}
+    .check b{color:var(--orange);font-size:18px}
+    .band{background:var(--navy);color:#fff}
+    .band .section-head h2{color:#fff}
+    .band .section-head p{color:#c9d4e0}
+    .features{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .feature{border:1px solid rgba(255,255,255,.15);border-radius:18px;padding:25px;background:rgba(255,255,255,.05)}
+    .feature h3{margin:0 0 8px;color:#fff}
+    .feature p{margin:0;color:#c9d4e0;line-height:1.6;font-size:14px}
+    .contact{background:#fffaf2}
+    .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:25px}
+    .contact-card{background:#fff;border:1px solid #eee;border-radius:20px;padding:30px;box-shadow:0 8px 28px rgba(6,29,59,.06)}
+    .contact-row{display:flex;gap:15px;align-items:flex-start;margin:18px 0}
+    .contact-icon{width:44px;height:44px;border-radius:12px;background:var(--navy);color:#fff;display:grid;place-items:center;flex:0 0 44px}
+    .contact-row small{color:#74808d;display:block;margin-bottom:3px}
+    .contact-row strong{color:var(--navy)}
+    .map-box{min-height:100%;border-radius:20px;background:linear-gradient(135deg,#062348,#174a82);padding:35px;color:#fff;display:flex;flex-direction:column;justify-content:center}
+    .map-box h3{font-size:27px;margin:0 0 10px}
+    .map-box p{color:#dce8f4;line-height:1.7}
+    footer{background:#04152c;color:#c8d2de;padding:30px 5%}
+    .footer-inner{max-width:1180px;margin:auto;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:center}
+    .footer-brand{font-weight:800;color:#fff}
+    .float-wa{position:fixed;right:20px;bottom:20px;z-index:30;background:#19a463;color:#fff;width:58px;height:58px;border-radius:50%;display:grid;place-items:center;font-size:25px;box-shadow:0 10px 30px rgba(0,0,0,.2)}
+    @media(max-width:900px){
+      .hero-inner,.about-grid,.contact-grid{grid-template-columns:1fr}
+      .grid{grid-template-columns:repeat(2,1fr)}
+      .features{grid-template-columns:1fr}
+      .hero{padding-top:45px}
+      .navlinks{display:none}
+    }
+    @media(max-width:560px){
+      .topbar{font-size:12px}
+      section{padding:58px 5%}
+      .grid{grid-template-columns:1fr}
+      .checks{grid-template-columns:1fr}
+      h2{font-size:34px}
+      .hero p{font-size:16px}
+      .brand-text{font-size:13px}
+    }
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    <div>Wholesalers & Retailers of Electrical Goods</div>
+    <div>📍 Ezra Street, Kolkata &nbsp; | &nbsp; <a href="tel:+918013656560">+91 80136 56560</a></div>
+  </div>
+
+  <header>
+    <nav>
+      <a class="brand" href="#home">
+        <div class="brand-mark">ॐ</div>
+        <div class="brand-text">SUNJYOTI POWER & ELECTRICS<small>KOLKATA • ELECTRICAL GOODS</small></div>
+      </a>
+      <div class="navlinks">
+        <a href="#home">Home</a>
+        <a href="#products">Products</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a class="nav-cta" href="https://wa.me/918013656560?text=Hello%20SUNJYOTI%20POWER%20%26%20ELECTRICS%2C%20I%20would%20like%20to%20know%20about%20your%20products.">WhatsApp Us</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-inner">
+        <div>
+          <div class="eyebrow">⚡ Trusted Electrical Goods Supplier</div>
+          <h1>Powering your projects with <span>reliable electrical goods.</span></h1>
+          <p>Welcome to <strong>SUNJYOTI POWER & ELECTRICS</strong> — wholesalers and retailers of electrical goods, serving customers from Ezra Street, Kolkata. We also undertake general order supply.</p>
+          <div class="actions">
+            <a class="btn btn-primary" href="https://wa.me/918013656560?text=Hello%20SUNJYOTI%20POWER%20%26%20ELECTRICS%2C%20I%20need%20a%20quotation.">Get a Quotation</a>
+            <a class="btn btn-secondary" href="tel:+918013656560">Call +91 80136 56560</a>
+          </div>
+          <div class="trust">
+            <span>✓ <strong>Wholesale</strong> & Retail</span>
+            <span>✓ General Order Supplier</span>
+            <span>✓ Kolkata Based</span>
+          </div>
+        </div>
+        <div class="hero-card">
+          <img src="SUNJYOTI.png" alt="SUNJYOTI POWER & ELECTRICS electrical products">
+        </div>
+      </div>
+    </section>
+
+    <section class="products" id="products">
+      <div class="container">
+        <div class="section-head">
+          <div class="tag">Our Products</div>
+          <h2>Electrical products for every requirement</h2>
+          <p>We deal in a range of electrical boxes, pipes and related goods for residential, commercial and general supply requirements.</p>
+        </div>
+        <div class="grid">
+          <article class="product"><div class="icon">▣</div><h3>MS Boxes</h3><p>MS boxes for electrical installation and enclosure requirements.</p></article>
+          <article class="product"><div class="icon">▤</div><h3>Modular Boxes</h3><p>Modular boxes suitable for modern electrical fittings and installations.</p></article>
+          <article class="product"><div class="icon">⚡</div><h3>MCB Boxes</h3><p>MCB box solutions for neat and organized circuit protection setups.</p></article>
+          <article class="product"><div class="icon">□</div><h3>Distribution Boxes</h3><p>Distribution box options for electrical distribution and control needs.</p></article>
+          <article class="product"><div class="icon">○</div><h3>Junction Boxes</h3><p>Junction boxes for safe and practical electrical connections.</p></article>
+          <article class="product"><div class="icon">◫</div><h3>Fan Boxes</h3><p>Fan box products for electrical and ceiling-fan installation work.</p></article>
+          <article class="product"><div class="icon">⌁</div><h3>Electrical Pipes</h3><p>Electrical pipes for routing and protecting electrical wiring.</p></article>
+          <article class="product"><div class="icon">▭</div><h3>LED Boxes</h3><p>LED box products for lighting installation requirements.</p></article>
+          <article class="product"><div class="icon">▱</div><h3>Conceal Boxes</h3><p>Conceal box solutions for clean, concealed electrical installations.</p></article>
+          <article class="product"><div class="icon">＋</div><h3>General Order Supply</h3><p>We also supply electrical goods against general orders as required.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container about-grid">
+        <div class="about-art"><img src="SUNJYOTI.png" alt="SUNJYOTI POWER & ELECTRICS products and business artwork"></div>
+        <div class="about-copy">
+          <div class="tag">About SUNJYOTI</div>
+          <h2>Your electrical goods partner in Ezra Street, Kolkata.</h2>
+          <p>SUNJYOTI POWER & ELECTRICS is a wholesale and retail electrical goods business based in Ezra Street, Kolkata, West Bengal. We cater to customers looking for electrical boxes, pipes and other related goods, and we also undertake general order supply.</p>
+          <div class="checks">
+            <div class="check"><b>✓</b><span>Wholesale & retail supply</span></div>
+            <div class="check"><b>✓</b><span>Wide range of electrical goods</span></div>
+            <div class="check"><b>✓</b><span>General order supplier</span></div>
+            <div class="check"><b>✓</b><span>Convenient WhatsApp enquiries</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="band">
+      <div class="container">
+        <div class="section-head">
+          <div class="tag">Why Choose Us</div>
+          <h2>A practical choice for electrical supply</h2>
+          <p>Whether you need a few items or a general order, contact us with your requirement and we can discuss the right supply for your project.</p>
+        </div>
+        <div class="features">
+          <div class="feature"><h3>Wholesale & Retail</h3><p>Serving both wholesale and retail electrical goods requirements.</p></div>
+          <div class="feature"><h3>Product Range</h3><p>Boxes, pipes and other electrical goods in one convenient place.</p></div>
+          <div class="feature"><h3>Easy Enquiry</h3><p>Call or WhatsApp your requirement for product information and quotations.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="section-head">
+          <div class="tag">Get In Touch</div>
+          <h2>Let's discuss your requirement</h2>
+          <p>Call or WhatsApp SUNJYOTI POWER & ELECTRICS for product enquiries, orders and general supply requirements.</p>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-card">
+            <div class="contact-row">
+              <div class="contact-icon">☎</div>
+              <div><small>Phone / WhatsApp</small><strong><a href="tel:+918013656560">+91 80136 56560</a></strong></div>
+            </div>
+            <div class="contact-row">
+              <div class="contact-icon">📍</div>
+              <div><small>Business Location</small><strong>Ezra Street, Kolkata, West Bengal</strong></div>
+            </div>
+            <div class="actions">
+              <a class="btn btn-primary" href="https://wa.me/918013656560?text=Hello%20SUNJYOTI%20POWER%20%26%20ELECTRICS%2C%20I%20want%20to%20enquire%20about%20your%20products.">Message on WhatsApp</a>
+              <a class="btn btn-secondary" href="tel:+918013656560">Call Now</a>
+            </div>
+          </div>
+          <div class="map-box">
+            <h3>Visit us in Kolkata</h3>
+            <p><strong>Ezra Street</strong><br>Kolkata, West Bengal</p>
+            <a class="btn btn-secondary" href="https://www.google.com/maps/search/?api=1&query=Ezra+Street%2C+Kolkata%2C+West+Bengal" target="_blank" rel="noopener">Open in Google Maps ↗</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <a class="float-wa" href="https://wa.me/918013656560?text=Hello%20SUNJYOTI%20POWER%20%26%20ELECTRICS" aria-label="WhatsApp SUNJYOTI POWER & ELECTRICS">◉</a>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">SUNJYOTI POWER & ELECTRICS</div>
+      <div>© <span id="year"></span> SUNJYOTI POWER & ELECTRICS. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
